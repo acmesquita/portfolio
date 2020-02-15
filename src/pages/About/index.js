@@ -1,9 +1,14 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container } from './styles';
+import Bio from '../../components/Bio';
+import Timeline from '../../components/Timeline';
 
 export default function About() {
   return (
-    <h2>About</h2>
+    <Container>
+      <Bio />
+      <Timeline />
+    </Container>
   );
 }
