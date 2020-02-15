@@ -15,6 +15,7 @@ export const Container = styled.div`
 
     li {
       padding: 10px;
+      text-transform: uppercase;
     }
   }
 

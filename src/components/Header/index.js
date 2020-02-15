@@ -14,10 +14,10 @@ export default function Header() {
       </div>
       <ul>
         <li>
-          <Link to="about">Sobre</Link>
+          <Link to="sobre">Sobre</Link>
         </li>
         <li>
-          <Link to="projects">Projetos</Link>
+          <Link to="projetos">Projetos</Link>
         </li>
       </ul>
     </Container>
