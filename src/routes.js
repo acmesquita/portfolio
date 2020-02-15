@@ -1,22 +1,22 @@
 import React from 'react';
 import {
   Routes,
-  Route,
-  useNavigate
+  Route
 } from 'react-router-dom';
 
 import Main from './pages/Main';
 import About from './pages/About';
+import Page404 from './pages/Page404';
 
 export default function MainRoutes() {
-  const navigate = useNavigate()
+
   return (
     <Routes>
       <Route path="/" element={<Main />}>
         <Route path="/about" element={<About />} />
       </Route>
 
-      <Route path="*" element={<h1>Not found - <button onClick={() => navigate('/')} >back</button> </h1>} />
+      <Route path="*" element={<Page404 />} />
     </Routes>
   )
 }
