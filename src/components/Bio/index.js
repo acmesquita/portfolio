@@ -5,7 +5,7 @@ import { Container } from './styles';
 export default function Bio() {
   return (
     <Container>
-      <img src="https://avatars2.githubusercontent.com/u/15862643?v=4" className="avatar" />
+      <img src="https://avatars2.githubusercontent.com/u/15862643?v=4" className="avatar" alt="avatar" />
       <div>
         <h2>Catharina Mesquita</h2>
         <h4>Desenvolvedora de Software - Teresina - São Paulo</h4>
