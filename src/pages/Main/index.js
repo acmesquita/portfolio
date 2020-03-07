@@ -1,16 +1,19 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../../components/Header';
 
 import { Container } from './styles';
 
 export default function Main() {
-
+  const { pathname } = useLocation()
+  function show() {
+    return pathname !== "/"
+  }
   return (
     <>
       <Header />
       <Container>
-        <Outlet />
+        {show() ? <Outlet /> : <h1>Olá</h1>}
       </Container>
     </>
   );

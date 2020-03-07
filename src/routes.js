@@ -8,6 +8,7 @@ import Main from './pages/Main';
 import About from './pages/About';
 import Page404 from './pages/Page404';
 import Projects from './pages/Projects';
+import History from './pages/History';
 
 export default function MainRoutes() {
 
@@ -15,6 +16,7 @@ export default function MainRoutes() {
     <Routes>
       <Route path="/" element={<Main />}>
         <Route path="/sobre" element={<About />} />
+        <Route path="/historia" element={<History />} />
         <Route path="/projetos" element={<Projects />} />
       </Route>
 

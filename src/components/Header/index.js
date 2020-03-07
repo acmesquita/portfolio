@@ -14,7 +14,13 @@ export default function Header() {
       </div>
       <ul>
         <li>
+          <Link to="/">Início</Link>
+        </li>
+        <li>
           <Link to="sobre">Sobre</Link>
+        </li>
+        <li>
+          <Link to="historia">História</Link>
         </li>
         <li>
           <Link to="projetos">Projetos</Link>
