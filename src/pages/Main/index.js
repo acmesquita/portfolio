@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../../components/Header';
+import Index from '../Index'
 
 import { Container } from './styles';
 
@@ -13,8 +14,9 @@ export default function Main() {
     <>
       <Header />
       <Container>
-        {show() ? <Outlet /> : <h1>Olá</h1>}
+        {show() ? <Outlet /> : <Index />}
       </Container>
     </>
   );
 }
+
